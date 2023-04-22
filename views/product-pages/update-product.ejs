@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <form action="/update-product" method="post">
+        <div>
+            <label class="hide" for="">Product Name </label>
+            <input class="run" type="text" placeholder="Productname" name="productname" value="<%=product.productname%>">
+        </div>
+    
+        <div>
+            <label class="hide" for="">Price</label>
+            <input  class="run" type="number" placeholder="Price" name="price" value="<%=product.price%>">
+        </div>
+        <div>
+            <label class="hide" for="">Quantity</label>
+            <input  class="run" type="number" placeholder="Quantity" name="quantity" value="<%=product.quantity%>">
+        </div>
+        <div>
+            <label class="hide" for="">Description</label>
+            <input class="run"  type="text" placeholder="Description" name="description" value="<%=product.description%>">
+        </div>
+        <div>
+            <label class="hide" for="">Product Image</label>
+            <input  class="run" type="url" placeholder="image" name="image" value="<%=product.image%>">
+        </div>
+        <button class="btn" type="submit"> Submit </button>
+    </form>
+</body>
+</html>

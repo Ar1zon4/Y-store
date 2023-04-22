@@ -1,51 +1,31 @@
-<%- include('../includes/userheader.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<%- include('../includes/usernav.ejs') %>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 offset-md-3 mt-4">
-                <h2> Sign-Up</h2>
-                <% if(errorMessage.length > 0){
-                  %>
-               <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                  <strong>Ooops!</strong> 
-                  <% for(let error of errorMessage){
-                   %>
-                     <div><%= error.msg %></div>
+    <form action="/signup" method="post">
+      <div>
+        <label for="">Email</label>
+        <input type="email" name="email" placeholder="YourEmail">
+      </div>
+      <div>
+        <label for="">Phone</label>
+        <input type="number" name="email" placeholder="YourNumber">
+      </div>
+      <div>
+        <label for="">Password</label>
+        <input type="password" name="password" placeholder="YourPassword">
+      </div>
+      <div>
+        <label for=""> ConfirmPassword</label>
+        <input type="password" name="password" placeholder="ConfirmPassword">
+      </div>
 
-                  <%}%>
-                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-              <%} %>
-                   <div class="card-body">
-                    <form action="/sign-up" method="post"> 
-                  <div class="mb-3">
-                    <label for="email" class="form-label">email</label>
-                    <input type="email" class="form-control"
-                      name="email" placeholder="Email"
-                       value="<%= oldInput.length >0 && oldInput[0].email ? oldInput[0].email : ''  %>">
-                  </div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" 
-                      value="<%= oldInput.length >0 && oldInput[0].password ? oldInput[0].password : ''  %>"
-                    class="form-control"  name="password" placeholder="Password">
-                  </div>
-                  <div class="mb-3">
-                    <label for="Confirm password" class="form-label">Confirm password</label>
-                    <input type="password" class="form-control"
-                    value="<%= oldInput.length >0 && oldInput[0].confirmPassword ? oldInput[0].confirmPassword : ''  %>"
-                    name="confirm_password" placeholder="Confirm Password">
-                  </div>
-                   <input type="submit" class="btn btn-primary" value="Submit">
-                </form>
-                  </div>
-        </div>
-        </div>
-    </div>
-</div>   
+    </form>
 
-<%- include('../includes/userfooter.ejs') %>
-
-
+</body>
+</html>

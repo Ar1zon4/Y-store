@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.run{
+    width: 100%;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+
+.hide{
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+.btn{
+    border-radius: 20%;
+    background-color: aqua;
+}
+
+.body{
+    background-color: rgb(10, 5, 5);
+    
+}
+
+.product{
+    color: aliceblue;
+}
+
+.container{
+    /* padding-left: 140px; */
+
+    border: 3px solid black;
+    width: 30%;
+    height: 270px;
+    /* margin: 0 auto; */
+    margin-left: 50px;
+
+    
+}
+
+.up{
+    padding-left: 40px;
+    display: flex;
+    border-bottom: 2px solid blue;
+}
+
+.pp{
+    padding: 9px;
+}
+
+h2{
+    text-align: center;
+}
+
+.body1{
+    background-color: rgb(105, 90, 78);
+}
+
+.btn2{
+    margin-left: 34px;
+}
+
+.table{
+    margin-left: 180px;
+}
+
+
